@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001845;
+}
+
+/*box*/
+.box{
+    margin-top: 100px;
+    color: #48bfe3;
+    height: 350px;
+    width: 300px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(-45deg,#0aefff,#fc3bff,#1d3557);
+    animation: animation 5s infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@keyframes animation{
+    0%,100%{
+        
+            background: linear-gradient(-45deg,#0aefff,#fc3bff,#1d3557);
+        
+    }
+    12.5%{
+        background: linear-gradient(0deg,#0aefff,#fc3bff,#1d3557);
+    }
+    25%{
+        
+            background: linear-gradient(45deg,#0aefff,#fc3bff,#1d3557);
+        
+    }
+    37.5%{
+        background: linear-gradient(to right ,#0aefff,#fc3bff,#1d3557);
+    }
+    50%{
+        
+            background: linear-gradient(135deg,#0aefff,#fc3bff,#1d3557);
+        
+    }
+    62.5%{
+        background: linear-gradient(to bottom,#0aefff,#fc3bff,#1d3557);
+    }
+    75%{
+        
+            background: linear-gradient(-135deg,#0aefff,#fc3bff,#1d3557);
+        
+    }
+    87.5%{
+        background: linear-gradient(to left ,#0aefff,#fc3bff,#1d3557);
+    }
+}
+.log-in{
+    height: 350px;
+    width: 300px;
+    transform: scale(0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #001845;
+}
+
+/*mail*/
+.mail-user{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.user{
+    height: 25px;
+    width: 250px;
+    border-bottom: 1px solid #48bfe3;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background: transparent;
+}
+
+/*password*/
+.password-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.password{
+    height: 25px;
+    width: 250px;
+    border-bottom: 1px solid #48bfe3;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background: transparent;
+}
+
+/*submit*/
+.submit{
+    height: 25px;
+    width: 220px;
+    border-end-start-radius: 20px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border: 1px solid #48bfe3;
+    background: transparent;
+    color: #48bfe3;
+    transition: all 0.1s ease-in;
+}
+.submit:hover{
+    background-color:#48bfe3 ;
+    color: #1d3557;
+    border: transparent;
+}
+
+/*fp*/
+ .fp{
+    display: flex;
+    padding-inline: 30px;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+ }
